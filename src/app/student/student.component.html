@@ -3,20 +3,22 @@
         <td>Name</td>
         <td>{{Name}}</td>
     </tr>
-    <tr>
+    <tr *ngIf='ShowDetails'>
         <td>Branch</td>
         <td>{{Branch}}</td>
     </tr>
-    <tr>
+    <tr *ngIf='ShowDetails'>
         <td>Mobile</td>
         <td>{{Mobile}}</td>
     </tr>
-    <tr>
+    <tr *ngIf='ShowDetails'>
         <td>Gender</td>
         <td>{{Gender}}</td>
     </tr>
-    <tr>
+    <tr *ngIf='ShowDetails'>
         <td>Age</td>
         <td>{{Age}}</td>
     </tr>
+
+    <button (click)='buttonClicked()'>{{ShowDetails?"Hide": "Show"}}</button>
 </table>

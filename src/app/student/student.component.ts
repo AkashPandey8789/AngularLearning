@@ -12,10 +12,15 @@ export class StudentComponent implements OnInit {
   Mobile: number = 9876543210;
   Gender: string = 'Male';
   Age: number = 22;
+  ShowDetails:boolean=false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  buttonClicked(){
+    this.ShowDetails=!this.ShowDetails;
   }
 
 }
